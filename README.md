@@ -1,11 +1,22 @@
 # Zadanie domowe Git - Instrukcja obsługi
-Aby zaliczyć to zadanie należy dokonać istotnego wkładu (opisanie nowej komendy z listy, uzypełnienie lub zastąpienie obecnego opisu) w grupową próbę opracowania krótkiego opisu kluczowych komend Gita.
+Polega na grupowym opracowaniu krótkiego opisu kluczowych komend Gita.
 
 
 Wymagania:
  * opracowanie ma mieć formę jednoplikowej strony HTML
  * wszystkie komendy z poniższej listy muszą zostać opisane (co robią i do czego mogą być przydatne + przykład użycia)
  * całość powinna być poprawna pod kątem językowym
+ 
+Sposób pracy:
+ * Każdy student tworzy własną kopię repozytorium (fork)
+ * Dokonuje tam zmian (najlepiej w modelu branch per feature)
+ * Następnie wysyła zgłoszenie Pull Request do oryginalnego repozytorium
+ 
+Zadanie zaliczą te osoby, które łącznie:
+ * dokonają istotnego wkładu merytorycznego w opracowanie (dodanie opisu komendy, modyfikacja istniejącego pisu, code review)
+ * stworzą własne repozytorium (fork)
+ * prześlą Pull Request do oryginalnego repozytorium
+ 
  
  Lista komend do opisania:
  
