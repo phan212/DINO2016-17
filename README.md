@@ -16,6 +16,7 @@ Zadanie zaliczą te osoby, które łącznie:
  * dokonają istotnego wkładu merytorycznego w opracowanie (dodanie opisu komendy, modyfikacja istniejącego pisu, code review)
  * stworzą własne repozytorium (fork)
  * prześlą Pull Request do oryginalnego repozytorium
+ * ich Pull Request zostanie włączony do głównego branch (master)
  
  
  Lista komend do opisania:
