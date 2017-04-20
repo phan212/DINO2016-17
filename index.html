@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 	<title>Komendy Git</title>
 	<meta charset="utf-8">
@@ -13,10 +13,9 @@ body{
 }
 ul.nice{
 	list-style-position : inside;
-	list-style-type : circle;
 	list-style-image: url("https://cdn2.iconfinder.com/data/icons/halloween-filled/48/Black-Cat-16.png");
 	font-size : 25px;
-	font-size : 1vw;
+	font-size : 1.5vw;
 }
 </style>
 <body>
@@ -27,7 +26,7 @@ ul.nice{
 		<strong>git config --global user.email ""</strong> - <span>ustawia globalnie adres e-mail użytkownika używany do commitowania</span>
 	</li>
 	<li>
-		<strong>git commit -a -m ""</strong> - <span>stage'uje wszystkie zmiany i dodaje commit z komentarzem ""</span>
+		<strong>git commit -a -m ""</strong> - <span>pientruję wszystkie zmiany i dodaje commit z komentarzem ""</span>
 	</li>
 	<li>
 		<strong>git diff --staged</strong> - <span>pokazuje różnice pomiędzy ostatnim commitem a zestage'owanymi zmianami</span>
@@ -37,6 +36,8 @@ ul.nice{
 	</li>
 	<li>
 		<strong>git log --graph --all</strong> - <span>wyświetla graficzną (choć tekstową) reprezentację historii wszystkich commitów w repozytorium</span>
+		<br><figure><a href="http://i.imgur.com/8iLX0jS.png"><img src="http://i.imgur.com/8iLX0jS.png" title="git log w git bash (shell)" alt="Zachowanie komendy git log --graph -all w git bash" style='height: 25%; width: 25%; object-fit: cover'></a>
+		<figcaption>Działanie komendy w git bash (graficzna reprezentacja commitów)</figcaption> </figure>
 	</li>
 	<li>
 		<strong>git branch -d "branch"</strong> - <span>usuwa gałąź "branch"</span>
@@ -51,14 +52,14 @@ ul.nice{
 <div id = "1CC">
 <h2>Zadanie dla grupy 1CC</h2>
 <ul class = "nice">
-<li> <em>git config --global user.name ""</em> - konfiguracja własnej nazwy użytkownika. Opcja --global zapewnia, że będzie ona zapamiętana w danym systemie</li>
+<li> <em>git config --global user.name ""</em> - konfiguracja własnej nazwy użytkownika. Opcja '--global' sprawia że konfiguracja zostanie dokonana jednorazowo </li>
 <li> <em>git add .</em> - komenda dokonująca update w Index używajac aktualnego kontentu znalezionego w 'working tree', żeby przygotować 'content staged' na nastepny commit. Stages new and modified, without deleted.</li>
 <li> <em>git reset HEAD</em> - resetuje wszystkie spisy 'Index' w HEAD, pozostawiając 'working tree' bez zmian i raportuje to, co zostało zmienione. Dodatkowo można podać mode, domyślny to --mixed </li>
 <li> <em>git checkout "branch"</em> - przełącza na gałąź <em>branch</em> - po jej wykonaniu HEAD wskazuje na <em>branch</em>  </li>
 <li> <em>gitk --all</em> - otwiera program ze środowiskiem graficznym, który umożliwia podejrzenie wszystkich wprowadzanych zmian na repozytorium </li>
 <li> <em>git branch --merged</em> - wypisuje wszystkie gałęzie połączone z HEAD (głowica gałęzi na której się znajdujemy)</li>
-<li> <em>git branch "branch" "commit hash"</em> - tworzy nową gałąź o nazwie 'branch' odnoszącą się do commita o hash'u 'commit hash', zamiast hash'a można podać referencę np. HEAD. </li>
-<li> <em>git pull "remote" "branch"</em> - pobiera ('fetch') gałąź 'branch' ze zdalnego repozytorium 'remote' i scala ('merge') ją do lokalnej gałęzi 'branch'</li>
+<li> <em>git branch "branch" "commit hash"</em> - tworzy nową gałąź 'branch' a jako jej head (głowicę) ustawia 'commit hash'</li>
+<li> <em>git pull "remote" "branch"</em> - Pobiera gałąź 'branch' ze zdalnego repozytorium 'remote' i zapisuje ją w lokalnej gałęzi 'branch'</li>
 </ul>
 </div>
 </body>
