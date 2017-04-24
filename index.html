@@ -17,6 +17,14 @@ ul.nice{
 	font-size : 25px;
 	font-size : 1.3vw;
 }
+ #1CF{
+	text-align : center;
+	position : absolute;
+}
+ul.tick{
+	list-style-position : inside;
+	list-style-image: url("https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_check-16.png");
+}
 </style>
 <body>
 <h1>Opracowanie komend git</h1>
@@ -26,7 +34,7 @@ ul.nice{
 		<strong>git config --global user.email ""</strong> - <span>ustawia globalnie adres e-mail użytkownika używany do commitowania</span>
 	</li>
 	<li>
-		<strong>git commit -a -m ""</strong> - <span>pientruję wszystkie zmiany i dodaje commit z komentarzem ""</span>
+		<strong>git commit -a -m ""</strong> - <span>stackuje wszystkie zmiany i dodaje commit z komentarzem ""</span>
 	</li>
 	<li>
 		<strong>git diff --staged</strong> - <span>pokazuje różnice pomiędzy ostatnim commitem a zestage'owanymi zmianami</span>
@@ -65,7 +73,7 @@ ul.nice{
 
 <div id = "1CF">
 <h2>Zadania dla grupy 1CF</h2>
-<ul>
+<ul class = "tick">
 	<li>
 		<strong>git config --global color.ui true</strong> - <span></span>
 	</li>
