@@ -6,6 +6,7 @@
 <style>
 body{
     line-height: 22px;
+		background-color: lightgrey;
 }
  #1CC{
 	text-align : center;
@@ -34,13 +35,13 @@ ul.tick{
 		<strong>git config --global user.email ""</strong> - <span>ustawia globalnie adres e-mail użytkownika używany do commitowania</span>
 	</li>
 	<li>
-		<strong>git commit -a -m ""</strong> - <span>stackuje wszystkie zmiany i dodaje commit z komentarzem ""</span>
+		<strong>git commit -a -m ""</strong> - <span>automatycznie stage'uje wszystkie zmodyfikowane i usunięte pliki (za wyjątkiem nowych) i dodaje commit z komentarzem ""</span>
 	</li>
 	<li>
 		<strong>git diff --staged</strong> - <span>pokazuje różnice pomiędzy ostatnim commitem a zestage'owanymi zmianami</span>
 	</li>
 	<li>
-		<strong>git checkout -b "branch"</strong> - <span>przełącza do gałęzi "branch"</span>
+		<strong>git checkout -b "branch"</strong> - <span>przełącza do gałęzi o nazwie "branch"</span>
 	</li>
 	<li>
 		<strong>git log --graph --all</strong> - <span>wyświetla graficzną (choć tekstową) reprezentację historii wszystkich commitów w repozytorium</span>
@@ -48,7 +49,7 @@ ul.tick{
 		<figcaption>Działanie komendy w git bash (graficzna reprezentacja commitów)</figcaption> </figure>
 	</li>
 	<li>
-		<strong>git branch -d "branch"</strong> - <span>usuwa gałąź "branch"</span>
+		<strong>git branch -d "branch"</strong> - <span>usuwa gałąź o nazwie "branch"</span>
 	</li>
 	<li>
 		<strong>git remote add "remote_name" "git url"</strong> - <span>dodaje zdalne repozytorium pod nazwą "remote_name"</span>
