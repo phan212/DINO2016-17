@@ -33,7 +33,7 @@ ul.nice{
 		<strong>git diff --staged</strong> - <span>pokazuje różnice pomiędzy ostatnim commitem a zestage'owanymi zmianami</span>
 	</li>
 	<li>
-		<strong>git checkout -b "branch"</strong> - <span>przełącza do gałęzi o nazwie "branch"</span>
+		<strong>git checkout -b "branch"</strong> - <span>przełącza do gałęzi o nazwie "branch". Jeżeli nie istnieje gałąź o takiej nazwie, tworzy ją.</span>
 	</li>
 	<li>
 		<strong>git log --graph --all</strong> - <span>wyświetla graficzną (choć tekstową) reprezentację historii wszystkich commitów w repozytorium</span>
@@ -47,7 +47,8 @@ ul.nice{
 		<strong>git remote add "remote_name" "git url"</strong> - <span>dodaje zdalne repozytorium pod nazwą "remote_name"</span>
 	</li>
 	<li>
-		<strong>git fetch "remote" "branch"</strong> - <span>pobiera zmiany ze zdalnego repozytorium o nazwie "remote", z gałęzi "branch"</span>
+		<strong>git fetch "remote" "branch"</strong> - <span>pobiera zmiany ze zdalnego repozytorium o nazwie "remote", z gałęzi "branch". W przeciwieństwie do
+		 pulla nie merguje lokalnego repozytorium z głównym.</span>
 	</li>
 </ul>
 <div id = "1CC">
