@@ -45,7 +45,7 @@ ul.tick{
 	</li>
 	<li>
 		<strong>git log --graph --all</strong> - <span>wyświetla graficzną (choć tekstową) reprezentację historii wszystkich commitów w repozytorium</span>
-		<br><figure><a href="http://i.imgur.com/8iLX0jS.png"><img src="http://i.imgur.com/8iLX0jS.png" title="git log w git bash (shell)" alt="Zachowanie komendy git log --graph -all w git bash" style='height: 25%; width: 25%; object-fit: cover'></a>
+		<br><figure><a target="_blank" href="http://i.imgur.com/8iLX0jS.png"><img src="http://i.imgur.com/8iLX0jS.png" title="git log w git bash (shell)" alt="Zachowanie komendy git log --graph -all w git bash" style='height: 25%; width: 25%; object-fit: cover'></a>
 		<figcaption>Działanie komendy w git bash (graficzna reprezentacja commitów)</figcaption> </figure>
 		<strong>Uwaga: Opcja --graph nie może być łączona z opcja --no-walk (która pokazuje tylko commity, ale bez ich poprzedników)</strong>
 	</li>
@@ -68,7 +68,7 @@ ul.tick{
 <li> <em>git reset HEAD</em> - resetuje wszystkie spisy 'Index' w HEAD, pozostawiając 'working tree' bez zmian i raportuje to, co zostało zmienione. Dodatkowo można podać sposób, domyślny to '--mixed' </li>
 <li> <em>git checkout "branch"</em> - Sprawdza gałąż, która wcześniej powinna być utworzona przez komende git branch, następnie przełącza na gałąź <em>branch</em> - po jej wykonaniu HEAD wskazuje na <em>branch</em>  </li>
 <li> <em>gitk --all</em> - otwiera program ze środowiskiem graficznym, który umożliwia podejrzenie wszystkich wprowadzanych zmian na repozytorium
-<br><figure><a href="http://oi65.tinypic.com/2z6giah.jpg"><img src="http://oi65.tinypic.com/2z6giah.jpg" title="przyklad dzialania gitk" style='height: 25%; width: 25%; object-fit: cover'></a> </li>
+<br><figure><a target="_blank" href="http://oi65.tinypic.com/2z6giah.jpg"><img src="http://oi65.tinypic.com/2z6giah.jpg" title="przyklad dzialania gitk" style='height: 25%; width: 25%; object-fit: cover'></a> </li>
 <li> <em>git branch --merged</em> - wypisuje wszystkie gałęzie połączone z HEAD (głowica gałęzi na której się znajdujemy)</li>
 <li> <em>git branch "branch" "commit hash"</em> - tworzy nową gałąź 'branch' a jako jej head (głowicę) ustawia 'commit hash'</li>
 <li> <em>git pull "remote" "branch"</em> - Pobiera gałąź 'branch' ze zdalnego repozytorium 'remote' i zapisuje ją w lokalnej gałęzi 'branch'</li>
@@ -97,6 +97,7 @@ ul.tick{
 	</li>
 	<li>
 		<strong>git blame -C "filename"</strong> - <span>Wyszukuje fragmenty kodu przekopiowane z innych plików będących częścią tego samego commita.</span>
+		<br><figure><a target="_blank" href="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png"><img src="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png" title="przyklad dzialania git blame -c" style='height: 25%; width: 25%; object-fit: cover'></a> </li>
 	</li>
 	<li>
 		<strong>git bisect (start, bad, good, reset)</strong> - <span>Pozwala na binarne wyszukiwanie commitu w którym pojawiła się konkretna zmiana.
