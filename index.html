@@ -64,9 +64,9 @@ ul.tick{
 <h2>Zadanie dla grupy 1CC</h2>
 <ul class = "nice">
 <li> <em>git config --global user.name ""</em> - konfiguracja własnej nazwy użytkownika. Opcja '--global' sprawia że konfiguracja zostanie dokonana jednorazowo </li>
-<li> <em>git add .</em> - komenda dokonująca update w Index używajac aktualnego kontentu znalezionego w 'working tree', żeby przygotować 'content staged' na nastepny commit. Stages new and modified, without deleted.</li>
-<li> <em>git reset HEAD</em> - resetuje wszystkie spisy 'Index' w HEAD, pozostawiając 'working tree' bez zmian i raportuje to, co zostało zmienione. Dodatkowo można podać mode, domyślny to --mixed </li>
-<li> <em>git checkout "branch"</em> - przełącza na gałąź <em>branch</em> - po jej wykonaniu HEAD wskazuje na <em>branch</em>  </li>
+<li> <em>git add .</em> - komenda dokonująca update w Index używajac aktualnego kontentu znalezionego w 'working tree', żeby przygotować 'content staged' na nastepny commit. Etapy są modyfikowane bez kasowania</li>
+<li> <em>git reset HEAD</em> - resetuje wszystkie spisy 'Index' w HEAD, pozostawiając 'working tree' bez zmian i raportuje to, co zostało zmienione. Dodatkowo można podać sposób, domyślny to '--mixed' </li>
+<li> <em>git checkout "branch"</em> - Sprawdza gałąż, która wcześniej powinna być utworzona przez komende git branch, następnie przełącza na gałąź <em>branch</em> - po jej wykonaniu HEAD wskazuje na <em>branch</em>  </li>
 <li> <em>gitk --all</em> - otwiera program ze środowiskiem graficznym, który umożliwia podejrzenie wszystkich wprowadzanych zmian na repozytorium
 <br><figure><a href="http://oi65.tinypic.com/2z6giah.jpg"><img src="http://oi65.tinypic.com/2z6giah.jpg" title="przyklad dzialania gitk" style='height: 25%; width: 25%; object-fit: cover'></a> </li>
 <li> <em>git branch --merged</em> - wypisuje wszystkie gałęzie połączone z HEAD (głowica gałęzi na której się znajdujemy)</li>
