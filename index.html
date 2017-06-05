@@ -3,11 +3,12 @@
 	<title>Komendy Git</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div id="wrapper">
         <header>
-        <center><img src="https://blog.intelligentbee.com/wp-content/uploads/2015/03/6-30-12_Git1.jpg" alt="git - header"/></center>
+        <img src="https://blog.intelligentbee.com/wp-content/uploads/2015/03/6-30-12_Git1.jpg" alt="git - header"/>
         </header>
     </div>
 <h1>Opracowanie komend</h1>
@@ -50,7 +51,7 @@
 <li> <em>git reset HEAD</em> - resetuje wszystkie spisy 'Index' w HEAD, pozostawiając 'working tree' bez zmian i raportuje to, co zostało zmienione. Dodatkowo można podać sposób, domyślny to '--mixed' </li>
 <li> <em>git checkout "branch"</em> - Sprawdza gałąż, która wcześniej powinna być utworzona przez komende git branch, następnie przełącza na gałąź <em>branch</em> - po jej wykonaniu HEAD wskazuje na <em>branch</em>  </li>
 <li> <em>gitk --all</em> - otwiera program ze środowiskiem graficznym, który umożliwia podejrzenie wszystkich wprowadzanych zmian na repozytorium
-<br><figure><a target="_blank" href="http://oi65.tinypic.com/2z6giah.jpg"><img src="http://oi65.tinypic.com/2z6giah.jpg" title="przyklad dzialania gitk" style='height: 25%; width: 25%; object-fit: cover'></a> </li>
+    <br><figure><a target="_blank" href="http://oi65.tinypic.com/2z6giah.jpg"><img src="http://oi65.tinypic.com/2z6giah.jpg" title="przyklad dzialania gitk" style='height: 25%; width: 25%; object-fit: cover'></a></figure> </li>
 <li> <em>git branch --merged</em> - wypisuje wszystkie gałęzie połączone z HEAD (głowica gałęzi na której się znajdujemy)</li>
 <li> <em>git branch "branch" "commit hash"</em> - tworzy nową gałąź 'branch' a jako jej head (głowicę) ustawia 'commit hash'</li>
 <li> <em>git pull "remote" "branch"</em> - Pobiera gałąź 'branch' ze zdalnego repozytorium 'remote' i zapisuje ją w lokalnej gałęzi 'branch'</li>
@@ -79,7 +80,7 @@
 	</li>
 	<li>
 		<strong>git blame -C "filename"</strong> - <span>Wyszukuje fragmenty kodu przekopiowane z innych plików będących częścią tego samego commita.</span>
-		<br><figure><a target="_blank" href="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png"><img src="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png" title="przyklad dzialania git blame -c" style='height: 25%; width: 25%; object-fit: cover'></a> </li>
+        <br><figure><a target="_blank" href="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png"><img src="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png" title="przyklad dzialania git blame -c" style='height: 25%; width: 25%; object-fit: cover'></a> </figure></li>
 	</li>
 	<li>
 		<strong>git bisect (start, bad, good, reset)</strong> - <span>Pozwala na binarne wyszukiwanie commitu, w którym pojawiła się konkretna zmiana.
