@@ -59,40 +59,78 @@
 </div>
 <div id = "1CF">
 <h2>Zadania dla grupy 1CF</h2>
+<br><b><u><font size="5"><font color="red">Kliknij na komendę aby wyświetlić jej opis</font></font><u></b>
 <ul class = "tick">
-	<li>
-		<strong>git config --global color.ui true</strong> - <span><b>Komunikaty generowane przez komendy git'a w terminalu będą miały różne kolory. Taką samą rolę jak komenda "true", pełni komenda "auto", która jest domyślna od wersji GIT 1.8.4.</b> </span>
-	</li>
-	<li>
-		<strong>git commit "NazwaPliku"</strong> - <span><b>Tworzy commit składający się z plików podanych jako argument "NazwaPliku". Pozostałe pliki w stanie staged nie są dodane do tego commita.</b></span>
-	</li>
-	<li>
-		<strong>git branch "name"</strong> - <span><b>Tworzy nową gałąź o nazwie "name" w repozytorium w , którym się aktualnie znajdujemy.</b></span>
-	</li>
-	<li>
-		<strong>git branch -v</strong> - <span><b>Wypisuje nazwę aktywnego brancha wraz z szczegółami ostatniego commita (początek skrótu sha1 oraz temat).</b></span>
-	</li>
-	<li>
-		<strong>git push "remote" "branch"</strong> - <span><b>Wysyła zmiany z ostatniego commita w lokalnej gałęzi "branch" do zdalnego repozytorium "remote".</b></span>
-	</li>
-	<li>
-		<strong>git log "branch1" --not "branch2"</strong> - <span>Wyświetli historię commitów "branch1" z pominięciem commitów będących częścią "branch2".</span>
-	</li>
-	<li>
-		<strong>git blame -C "filename"</strong> - <span>Wyszukuje fragmenty kodu przekopiowane z innych plików będących częścią tego samego commita.</span>
-        <br><figure><a target="_blank" href="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png"><img src="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png" title="przyklad dzialania git blame -c" style='height: 25%; width: 25%; object-fit: cover'></a> </figure></li>
-	</li>
-	<li>
-		<strong>git bisect (start, bad, good, reset)</strong> - <span>Pozwala na binarne wyszukiwanie commitu, w którym pojawiła się konkretna zmiana.
-			<ul class = "tick">
-										<li>git bisect start - rozpoczyna wyszukiwanie</li>
-										<li>git bisect bad "name" - znakuje commit o nazwie "name", w którym pojawiła się zmiania</li>
-										<li>git bisect good "name" - znakuje commit o nazwie "name", w którym nie ma szukanej zmiany</li>
-										<li>git bisect reset - przywraca stan do ostatniego aktywnego commitu przed git bisect start</li>
+    <li>
+        <div class="popup" onclick="myFunction()"><strong>git config --global color.ui true</strong>
+            <span class="popuptext" id="myPopup">Komunikaty generowane przez komendy git'a w terminalu będą miały różne kolory. Taką samą rolę jak komenda "true", pełni komenda "auto", która jest domyślna od wersji GIT 1.8.4.</span>
+        </div>
+    </li>
+    <li>
+         <div class="popup" onclick="myFunction1()"><strong>git commit "NazwaPliku"</strong>
+            <span class="popuptext" id="myPopup1">Tworzy commit składający się z plików podanych jako argument "NazwaPliku". Pozostałe pliki w stanie staged nie są dodane do tego commita.</span>
+                </div>
+    </li>
+    <li>
+         <div class="popup" onclick="myFunction2()"><strong>git branch "name"</strong>
+            <span class="popuptext" id="myPopup2">Tworzy nową gałąź o nazwie "name" w repozytorium w , którym się aktualnie znajdujemy.</span>
+        </div>
+    </li>
+    <li>
+        <div class="popup" onclick="myFunction3()"><strong>git branch -v</strong>
+            <span class="popuptext" id="myPopup3">Wypisuje nazwę aktywnego brancha wraz z szczegółami ostatniego commita (początek skrótu sha1 oraz temat).</span>
+        </div>
+    </li>
+    <li>
+        <div class="popup" onclick="myFunction4()"><strong>git push "remote" "branch"</strong>
+            <span class="popuptext" id="myPopup4">Wysyła zmiany z ostatniego commita w lokalnej gałęzi "branch" do zdalnego repozytorium "remote".</span>
+        </div>
+    </li>
+    <li>
+        <div class="popup" onclick="myFunction5()"><strong>git log "branch1" --not "branch2"</strong>
+            <span class="popuptext" id="myPopup5">Wyświetli historię commitów "branch1" z pominięciem commitów będących częścią "branch2".</span>
+        </div>
+    </li>
+    <li>
+       <div class="popup" onclick="myFunction6()"><strong>git blame -C "filename"</strong>
+            <span class="popuptext" id="myPopup6">Wyszukuje fragmenty kodu przekopiowane z innych plików będących częścią tego samego commita.</span>
+        </div>
+        <br><figure><a target="_blank" href="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png"><img src="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png" title="przyklad dzialania git blame -c" style='height: 25%; width: 25%; object-fit: cover'></a> </figure>
+        
+    </li>
+    
+    
+<br>
 
+	<li>
+         <div class="popup" onclick="myFunction7()"><strong>git bisect (start, bad, good, reset)</strong>
+            <span class="popuptext" id="myPopup7">Pozwala na binarne wyszukiwanie commitu, w którym pojawiła się konkretna zmiana.</span>
+        </div>
+            </li>
+			<ul class = "tick">
+                    <li>
+                        <div class="popup" onclick="myFunction8()">git bisect start
+                            <span class="popuptext" id="myPopup8">Rozpoczyna wyszukiwanie.</span>
+                        </div>
+                    </li>
+                    <li>
+                   <div class="popup" onclick="myFunction9()">git bisect bad "name"
+                            <span class="popuptext" id="myPopup9">Znakuje commit o nazwie "name", w którym pojawiła się zmiania.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="popup" onclick="myFunction10()">git bisect good "name"
+                            <span class="popuptext" id="myPopup10">Znakuje commit o nazwie "name", w którym nie ma szukanej zmiany.</span>
+                        </div>
+                    </li>
+                    <li>
+                         <div class="popup" onclick="myFunction11()">git bisect reset
+                            <span class="popuptext" id="myPopup11">Przywraca stan do ostatniego aktywnego commitu przed git bisect start.</span>
+                        </div>
+                    </li>
+               
 			</ul>
 			</span>
-	</li>
 </ul>
 </div>
 <div id="links_section">
@@ -103,5 +141,83 @@
 	<li><a class="links" href="https://git-scm.com/docs">Dokumentacja git-a</a></li>
 	</ul>
 </div>
+
+<script>
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+</script>
+
+<script>
+    function myFunction1() {
+        var popup = document.getElementById("myPopup1");
+        popup.classList.toggle("show");
+    }
+</script>
+
+
+<script>
+    function myFunction2() {
+        var popup = document.getElementById("myPopup2");
+        popup.classList.toggle("show");
+    }
+</script>
+<script>
+ 
+    function myFunction3() {
+        var popup = document.getElementById("myPopup3");
+        popup.classList.toggle("show");
+    }
+</script>
+<script>
+    function myFunction4() {
+        var popup = document.getElementById("myPopup4");
+        popup.classList.toggle("show");
+    }
+</script>
+<script>
+    function myFunction5() {
+        var popup = document.getElementById("myPopup5");
+        popup.classList.toggle("show");
+    }
+</script>
+<script>
+    function myFunction6() {
+        var popup = document.getElementById("myPopup6");
+        popup.classList.toggle("show");
+    }
+</script>
+<script>
+    function myFunction7() {
+        var popup = document.getElementById("myPopup7");
+        popup.classList.toggle("show");
+    }
+</script>
+<script>
+    function myFunction8() {
+        var popup = document.getElementById("myPopup8");
+        popup.classList.toggle("show");
+    }
+</script>
+<script>
+    function myFunction9() {
+        var popup = document.getElementById("myPopup9");
+        popup.classList.toggle("show");
+    }
+</script>
+<script>
+    function myFunction10() {
+        var popup = document.getElementById("myPopup10");
+        popup.classList.toggle("show");
+    }
+</script>
+<script>
+    function myFunction11() {
+        var popup = document.getElementById("myPopup11");
+        popup.classList.toggle("show");
+    }
+</script>
+
 </body>
 </html>
